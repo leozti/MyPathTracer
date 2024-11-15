@@ -1,0 +1,51 @@
+--------SCENE SETTINGS---------
+
+Scene Number : 0
+
+3D Model Name : penguin
+
+--------CAMERA SETTINGS--------
+
+- Output Image Name : helloPT
+
+- Aspect Ratio (width/height) :
+  - width : 4
+  - height : 3
+
+- Image Width (pixels) : 400
+
+- Vertical Field of View : 30
+
+- "Look-From" Vector :
+  - x : 0
+  - y : 5
+  - z : 12
+
+- "Look-At" Vector :
+  - x : 0
+  - y : 0
+  - z : 0
+
+- "Up" Vector :
+  - x : 0
+  - y : 1
+  - z : 0
+
+- Per-Pixel Samples : 100
+
+- Defocus Angle : 1.0
+
+- Focus Distance : 16
+
+- Max Depth of Ray Bounces : 5
+
+- Background Color : 
+  - r : 0.53
+  - g : 0.91
+  - b : 0.92
+
+--------SYSTEM SETTINGS--------
+
+- Number of Threads : 16
+
+- Number of Sub-Images : 60

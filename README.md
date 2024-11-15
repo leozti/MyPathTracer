@@ -28,7 +28,7 @@ sudo apt-get install libglew-dev
 sudo apt-get install libassimp-dev
 ```
 
-Once the libraries are installed, ***MyPathTracer*** can be built with the **GNU make** utility (there's a *Makefile* in the *MyPathTracer* directory). Simply open a terminal and move to the *MyPathTracer* directory, then type `make`. 
+Once the libraries are installed, ***MyPathTracer*** can be built with the **GNU make** utility (there's a *Makefile* in the *MyPathTracer* directory). Simply open a terminal and type `make` from the *MyPathTracer* directory. 
 
 Building  will result in two binary files, contained in the *bin* directory:
 * ***myPT***, the path tracer program
@@ -64,17 +64,17 @@ All **camera settings** following `Output Image Name` are **ignored** in the cas
 
 When run, ***myPT*** creates a folder with the same name as the output image in the *images* directory, where the output image, divided in groups of adjacent rows, is rendered by **multiple threads**. These groups of rows are indicated with the term "**sub-images**", and there can be more (as well as less) sub-images than threads. Each thread, independently from the others, renders a sub-image, until there aren't any left to render. The **number of threads** and **sub-images** to use can be specified in the `SYSTEM SETTINGS` of the **input file**.
 
-It's worth mentioning that the number of rows $n$ in each sub-image is calculated as:
+It's worth mentioning that the number of rows `n` in each sub-image is calculated as:
 
-$n =  h / s$
+`n =  h / s`
 
-where $h$ is the height of the image (in pixels) and $s$ is the number of sub-images. 
+where `h` is the height of the image (in pixels) and `s` is the number of sub-images. 
 For the last sub-image (the one with the bottom rows of the full image) the number of rows is actually:
 
-$n + h \% s$
+`n + h % s`
 
 to account for the remaining rows.
-(**NOTE**: these remaining rows could cause the last sub-image to be much larger than the others, making its rendering a time-bottleneck for the program. To have better performance, be sure that $h$ is a multiple of $s$.)
+(**NOTE**: these remaining rows could cause the last sub-image to be much larger than the others, making its rendering a time-bottleneck for the program. To have better performance, be sure that `h` is a multiple of `s`.)
 
 Once all of the sub-images have been rendered, the full image is put together and saved in the *images* directory. The **image format** is **PPM**.
 
@@ -134,4 +134,4 @@ The path tracer works with the following types of materials:
 
 ## Gallery
 
-<img src="presentation/bunny.jpg" width="50%">
+<img src="presentation/mirrors.jpg" width="49%"> <img src="presentation/bunny.jpg" width="50%"> <img src="presentation/dragon.jpg" width="49%"> <img src="presentation/cornell.jpg" width="49%"> <img src="presentation/globe.jpg" width="50%"> <img src="presentation/forest.jpg" width="49%">

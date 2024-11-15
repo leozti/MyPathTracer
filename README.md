@@ -1,9 +1,3 @@
----
-title: MyPathTracer
-created: '2024-11-05T13:55:20.613Z'
-modified: '2024-11-14T13:58:42.955Z'
----
-
 # MyPathTracer
 
 Simple path tracer for Linux based on the [Ray Tracing in One Weekend Book Series](https://raytracing.github.io/), with the addition of:

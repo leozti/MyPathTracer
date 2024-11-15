@@ -1,5 +1,7 @@
 # MyPathTracer
 
+<img src="presentation/bunny.jpg" width="50%">
+
 Simple path tracer for Linux based on the [Ray Tracing in One Weekend Book Series](https://raytracing.github.io/), with the addition of:
 * **Ray-triangle intersection**
 * **3D Model Loading**
@@ -130,10 +132,6 @@ The path tracer works with the following types of materials:
   * `illum 2` (*base shading*) as the illumination model
   * `Ke` as the color of the emitted light (must be non-zero)
 
+## Gallery
 
-
-
-
-
-
-
+<img src="presentation/bunny.jpg" width="50%">

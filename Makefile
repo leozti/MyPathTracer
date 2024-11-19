@@ -13,6 +13,7 @@ SE_TARGET_EXEC := $(BIN_DIR)/mySceneExp
 
 PT_INC_PATHS := -I./include
 SE_INC_PATHS := -I./include 
+COM_INC_PATHS := -I./include
 
 all: $(OBJ_DIR) $(PT_TARGET_EXEC) $(SE_TARGET_EXEC)
 
@@ -29,7 +30,7 @@ TEMP := $(patsubst %.cpp, %.o, $(COM_CPP_FILES))
 COM_OBJ_FILES := $(patsubst $(COM_SRC_DIR)/%, $(OBJ_DIR)/%, $(TEMP)) 
 
 $(OBJ_DIR)/comUtils.o: $(COM_SRC_DIR)/comUtils.cpp $(COM_HPP_FILES)
-	$(CXX) -c $(COM_SRC_DIR)/comUtils.cpp -o $@
+	$(CXX) -c $(COM_SRC_DIR)/comUtils.cpp $(COM_INC_PATHS) -o $@
 
 # SCENE EXPLORER
 

@@ -28,6 +28,8 @@ sudo apt-get install libglew-dev
 sudo apt-get install libassimp-dev
 ```
 
+Also make sure you have the `g++` compiler installed.
+
 Once the libraries are installed, ***MyPathTracer*** can be built with the **GNU Make** utility (there's a *Makefile* in the *MyPathTracer* directory). Simply open a terminal and type `make` from the *MyPathTracer* directory. 
 
 Building  will result in two binary files, contained in the *bin* directory:

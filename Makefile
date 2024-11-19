@@ -14,7 +14,12 @@ SE_TARGET_EXEC := $(BIN_DIR)/mySceneExp
 PT_INC_PATHS := -I./include
 SE_INC_PATHS := -I./include 
 
-all: $(PT_TARGET_EXEC) $(SE_TARGET_EXEC)
+all: $(OBJ_DIR) $(PT_TARGET_EXEC) $(SE_TARGET_EXEC)
+
+# DIRECTORY FOR BINARIES
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
 
 # COMMON
 
